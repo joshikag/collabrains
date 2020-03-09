@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-image: url(https://wallpaperaccess.com/full/268330.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+height: 200px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:lightgreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:darkgreen;
+}
+
+div {
+  border-radius: 2px;
+  background-color:lightgrey;
+;
+  padding: 20px;
+}
+</style>
+<body>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" placehlder="Your email address..">
+
+    <label for="field interest">Field Interest</label>
+    <select id="field interest" name="field interest">
+      <option value="Analytics">Analytics</option>
+      <option value="Software">Software</option>
+      <option value="HR">HR</option>
+
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+</div>
+
+</body>
+</html>
